@@ -1,11 +1,14 @@
 import React from "react";
 
 const FUNCTIONS = [
-  { id: "fn1", label: "fn1", jsonValue: 1 },
-  { id: "fn2", label: "fn2", jsonValue: 2 },
-  { id: "fn3", label: "fn3", jsonValue: 3 },
-  { id: "fn4", label: "fn4", jsonValue: 4 },
-  { id: "fn5", label: "fn5", jsonValue: 5 },
+  { id: "contract_init", label: "Contract Initialization", jsonValue: null, type: "form" },
+  { id: "owner_init", label: "Owner Initialization", jsonValue: null, type: "form" },
+  { id: "mint_init", label: "Mint Initialization", jsonValue: null, type: "form" },
+  { id: "owner_check", label: "Owner Check", jsonValue: null, type: "form" },
+  { id: "allowance_check", label: "Allowance Check", jsonValue: null, type: "form" },
+  { id: "approve", label: "Approve", jsonValue: null, type: "form" },
+  { id: "direct_transfer", label: "Direct Transfer", jsonValue: null, type: "form" },
+  { id: "approved_transfer", label: "Approved Transfer", jsonValue: null, type: "form" },
 ];
 
 export default function Sidebar({ onDragStartFn, onClickAdd }) {
