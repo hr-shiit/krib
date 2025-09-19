@@ -277,7 +277,7 @@ export default function App() {
     <div className="app">
       <Sidebar onDragStartFn={() => {}} onClickAdd={addNodeFromSidebar} />
 
-      <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <div className="main-content">
         <div className="topbar">
           <button
             className="btn primary"
@@ -314,14 +314,14 @@ export default function App() {
         <pre>{modalPayload ? JSON.stringify(modalPayload, null, 2) : "No data"}</pre>
       </Modal>
 
-      <Modal open={contractFormOpen} onClose={() => setContractFormOpen(false)} title="">
+      <Modal open={contractFormOpen} onClose={() => setContractFormOpen(false)} title="" hideDefaultButtons={true}>
         <ContractForm 
           onSubmit={handleContractFormSubmit}
           onCancel={() => setContractFormOpen(false)}
         />
       </Modal>
 
-      <Modal open={ownerFormOpen} onClose={() => setOwnerFormOpen(false)} title="">
+      <Modal open={ownerFormOpen} onClose={() => setOwnerFormOpen(false)} title="" hideDefaultButtons={true}>
         <OwnerForm 
           onSubmit={handleOwnerFormSubmit}
           onCancel={() => setOwnerFormOpen(false)}

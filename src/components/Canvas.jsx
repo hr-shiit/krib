@@ -57,7 +57,22 @@ export default function Canvas({
           const y1 = from.y + 25;
           const x2 = to.x + 10;
           const y2 = to.y + 25;
-          return <line key={idx} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#ffd54a" strokeWidth="3" strokeLinecap="round" />;
+          const dx = x2 - x1;
+          const dy = y2 - y1;
+          const midX = x1 + dx * 0.5;
+          
+          // Create an S-curve using cubic bezier
+          return (
+            <path
+              key={idx}
+              d={`M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`}
+              stroke="var(--color-secondary)"
+              strokeWidth="2"
+              fill="none"
+              strokeLinecap="round"
+              className="connection-line"
+            />
+          );
         })}
       </svg>
 
