@@ -1,15 +1,22 @@
 import React from "react";
 
-export default function Modal({ open, onClose, children, title = "Result" }) {
+export default function Modal({ open, onClose, children, title = "Result", hideDefaultButtons = false }) {
   if (!open) return null;
+
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
-        <h3 style={{ marginTop: 0 }}>{title}</h3>
-        {children}
-        <div style={{ marginTop: 12, textAlign: "right" }}>
-          <button className="btn" onClick={onClose}>Close</button>
+        {title && <h3>{title}</h3>}
+        <div className="modal-content">
+          {children}
         </div>
+        {!hideDefaultButtons && title && (
+          <div className="form-buttons">
+            <button className="secondary" onClick={onClose}>
+              Close
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
