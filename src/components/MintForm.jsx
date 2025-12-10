@@ -89,7 +89,7 @@ export default function MintForm({ onSubmit, onCancel }) {
         <div className="flex gap-4 pt-4">
           <button 
             type="submit" 
-            className="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 text-white py-3 px-6 rounded-lg hover:from-purple-700 hover:to-purple-800 font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 px-6 rounded-lg hover:from-orange-600 hover:to-orange-700 font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <span className="flex items-center justify-center">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
