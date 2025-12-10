@@ -9,21 +9,6 @@
     <strong>Build, visualize and deploy smart contracts with ease</strong>
   </p>
   
-  <p>
-    <a href="https://github.com/hr-shiit/krib/stargazers">
-      <img src="https://img.shields.io/github/stars/hr-shiit/krib?style=for-the-badge" alt="Stars" />
-    </a>
-    <a href="https://github.com/hr-shiit/krib/network/members">
-      <img src="https://img.shields.io/github/forks/hr-shiit/krib?style=for-the-badge" alt="Forks" />
-    </a>
-    <a href="https://github.com/hr-shiit/krib/issues">
-      <img src="https://img.shields.io/github/issues/hr-shiit/krib?style=for-the-badge" alt="Issues" />
-    </a>
-    <a href="https://github.com/hr-shiit/krib/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/hr-shiit/krib?style=for-the-badge" alt="License" />
-    </a>
-  </p>
-</div>
 
 ## ✨ Overview
 
@@ -99,24 +84,3 @@ Krib offers various components for building smart contracts:
 ## 🤝 Contributing
 
 We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
-## 📜 License
-
-Krib is available under the MIT License. See the [LICENSE](LICENSE) file for more info.
-
-## 🔗 Links
-
-- [Website](https://krib.dev)
-- [Documentation](https://docs.krib.dev)
-- [Community Discord](https://discord.gg/krib)
-- [Twitter](https://twitter.com/kribbuilder)
-
-## ⭐ Star Us
-
-If you find Krib useful, please consider giving us a star on GitHub! It helps us grow and improve the platform.
-
----
-
-<div align="center">
-  <sub>Built with ❤️ by the Krib team</sub>
-</div>
